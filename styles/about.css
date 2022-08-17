@@ -1,0 +1,123 @@
+.AboutContent{
+    position: relative;
+    height: 100vh;
+}
+
+.AboutContent .content{
+    position: relative;
+    top:15%;
+}
+
+.AboutContent h1{
+    font-size: 3rem;
+    font-family: "Expletus sans", sans-serif;
+    text-align: center;
+}
+
+.AboutContent .circle {
+    display:inline-block;
+    position: relative;
+    left: 35%;
+    transform: translateY(10%);
+    /*margin: 0 auto;*/
+    width: 700px;
+    height: 300px;
+    background: rgba(30, 81, 123);
+    border-radius: 25px;
+}
+
+
+.AboutContent .circle .introduce{
+    position: absolute;
+    width: inherit;
+    height: auto;
+    text-align: left;
+    transform: translateY(2.5%);
+    color:white;
+}
+
+.AboutContent .circle .introduce p{
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    padding: 0px 40px;
+}
+
+.AboutContent .circles:nth-child(1){
+    top: -35%;
+    left: 5%;
+    position: absolute;
+    background: rgba(137, 196, 244, 0.2);
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: -100;
+}
+
+.AboutContent .circles:nth-child(2){
+    left: 8%;
+    top: -15%;
+    position: absolute;
+    background: rgba(137, 196, 244, 0.5);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    text-align: center;
+    font-family: "Kanit",sans-serif;
+    font-size: 20px;
+    height: 80px;
+    width: 80px;
+    border-radius: 45%;
+}
+
+.AboutContent .circles:nth-child(3){
+    left: 12%;
+    top: 10%;
+    position: absolute;
+    background: rgba(137, 196, 244);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    text-align: center;
+    font-family: "Kanit",sans-serif;
+    font-size: 20px;
+    height: 120px;
+    width: 120px;
+    border-radius: 40%;
+}
+
+.AboutContent .circles:nth-child(4){
+    left: 22%;
+    top: 20%;
+    position: absolute;
+    background:rgba(30, 81, 123,0.8);
+    height: 155px;
+    width: 155px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    text-align: center;
+    font-family: "Kanit",sans-serif;
+    font-size: 20px;
+    border-radius: 35%;
+}
+
+.dolphin{
+    position: absolute;
+    top: 10%;
+    height: 40%;
+    width: 40%;
+    left: 62.5%;
+    transform: scale(-1, 1);
+}
+
+.animation{
+    position: absolute;
+    top: 70%;
+    height: 20%;
+    width: 25%;
+    left: 5%;
+}

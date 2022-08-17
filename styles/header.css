@@ -1,0 +1,86 @@
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: rgba(0,50,71);
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+header.sticky{
+    background: rgba(0,50,71,0.7);
+    backdrop-filter: blur(15px);
+}
+
+header h1{
+    color:white;
+    text-transform: uppercase;
+    font-family: "Expletus sans", sans-serif;
+}
+
+header h1 span{
+    color:aqua;
+}
+
+header nav{
+    flex-basis: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header nav ul{
+    list-style-type: none;
+    padding: 10px 0px;
+    transition: 0.3s;
+}
+
+header nav ul.sticky{
+    padding: 20px 0px;
+}
+
+header nav ul li{
+    padding: 0px 50px;
+    display: inline;
+}
+
+header nav ul li a{
+    position: relative;
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    text-decoration: none;
+}
+
+header nav ul li a:after{
+    z-index: 1000;
+    content:"";
+    position: absolute;
+    background-color: aqua;
+    height: 3px;
+    width:0;
+    left: 0;
+    top: 100%;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover:after{
+    width:100%;
+    background-image: none;
+}
+
+header nav ul li a:active, a:focus,a:hover{
+    color:lightblue;
+    width: 100%;
+}
+
+header nav ul li a:active:after{
+    width:100%;
+    background-image: none;
+}
