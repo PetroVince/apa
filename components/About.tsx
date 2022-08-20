@@ -1,9 +1,12 @@
 import {useEffect, useRef} from "react";
 import lottie from "lottie-web";
+import {motion} from "framer-motion";
+import {rotate} from "next/dist/server/lib/squoosh/impl";
 
 const About = () =>{
     const anim = useRef(null);
     const dolphin = useRef(null);
+    const scrollRef = useRef(null)
 
     useEffect(() => {
         // lottie.loadAnimation({
@@ -38,7 +41,12 @@ const About = () =>{
                    <span className={"circles"}>2006 szeptemberében jött létre</span>
                    {/*<span className={"circles"}>4x8 méteres</span>*/}
                    {/*<span className={"circles"}>1 méter mély </span>*/}
-                   <h1>Rólunk</h1>
+                   <motion.h1
+                       initial={{opacity:0}}
+                       whileInView={{opacity: 1}}
+                       viewport={{ fallback:true, amount: 0.8 }} transition={{duration:1}} >
+                       Rólunk
+                   </motion.h1>
                    <div id={"circle"} className={"circle"}>
                        <div className={"introduce"}>
                            <p>Létesítményünk egy 4x8 méteres, 1 méter mély feszített víztükrű beltéri medencét tartalmaz, 30-32 Cº fokos vízhőmérséklettel, melyet kifejezetten a kiscsoportos foglalkoztatások igényeire alakítottunk ki.
