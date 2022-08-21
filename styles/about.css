@@ -1,6 +1,7 @@
 .AboutContent{
     position: relative;
     height: 100vh;
+    max-height: 100vh;
 }
 
 .AboutContent .content{
@@ -92,7 +93,7 @@
     left: 22%;
     top: 20%;
     position: absolute;
-    background:rgba(30, 81, 123,0.8);
+    background:rgba(30, 81, 123,0.6);
     height: 155px;
     width: 155px;
     display:flex;
@@ -103,6 +104,23 @@
     font-family: "Kanit",sans-serif;
     font-size: 20px;
     border-radius: 35%;
+}
+
+.AboutContent .circles:nth-child(5){
+    left: 12%;
+    top: 80%;
+    position: absolute;
+    background:rgba(30, 81, 123,0.8);
+    height: 250px;
+    width: 300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    text-align: center;
+    font-family: "Kanit",sans-serif;
+    font-size: 20px;
+    border-radius: 15%;
 }
 
 .dolphin{

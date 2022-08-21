@@ -4,6 +4,7 @@
 @import "header.css";
 @import "video.css";
 @import "about.css";
+@import "functions.css";
 
 html,body{
     margin: 0;

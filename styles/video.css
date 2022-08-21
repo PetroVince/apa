@@ -28,7 +28,6 @@ video{
 
 .container .content{
     width:100%;
-    /*background: blue;*/
 }
 
 .container .content h1{
@@ -43,35 +42,14 @@ video{
 
 .container .content h5{
     font-size: 4rem;
-    /*position: fixed;*/
     width: 100%;
-    /*background: red;*/
     text-align: left;
-    /*font-size: 2rem;*/
-    /*word-break: break-word;*/
     font-family: "Expletus sans", sans-serif;
     transform: translateY(30%);
-    /*display:flex;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: space-between;*/
     margin: 0 5px;
-    /*flex-wrap: initial;*/
-    /*!*align-items: center;*!flex-shrink:0;*/
 }
 
 .container .content h5 span{
     width:100%;
-    /*display: inline-block;*/
-    /*flex-shrink:0;*/
     color:rgba(0,50,71);
 }
-
-/*.container .content .line{*/
-/*    transform: translateY(-78%);*/
-/*    margin: 0 auto;*/
-/*    width:50%;*/
-/*    height: 2px;*/
-/*    background: red;*/
-/*    z-index: 45;*/
-/*    display: flex;*/
-/*}*/
